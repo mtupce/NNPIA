@@ -12,12 +12,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class MyControllerSetTest {
 
     @Autowired
-    MyControllerSet controller = new MyControllerSet();
+    MyControllerSet controller;
+    @Autowired
+    GreetingService service;
 
     @Test
     void sayHello() {
 
-        GreetingService service = new GreetingServiceImp();
+
         controller.SetService(service);
 
         System.out.println(controller.sayHello());

@@ -15,11 +15,14 @@ class MyControllerPropertyTest {
     @Autowired
     MyControllerProperty controller;
 
+    /*
     @BeforeEach
     void setUp() {
         controller = new MyControllerProperty();
         controller.greetingService = new GreetingServiceImp();
     }
+    */
+
 
     @Test
     void sayHello() {
