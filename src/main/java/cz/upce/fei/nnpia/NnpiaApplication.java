@@ -1,4 +1,4 @@
-package cz.upce.fei.nnpia.main;
+package cz.upce.fei.nnpia;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
