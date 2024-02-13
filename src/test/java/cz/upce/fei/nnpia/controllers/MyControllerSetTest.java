@@ -13,15 +13,10 @@ class MyControllerSetTest {
 
     @Autowired
     MyControllerSet controller;
-    @Autowired
-    GreetingService service;
+
 
     @Test
     void sayHello() {
-
-
-        controller.SetService(service);
-
         System.out.println(controller.sayHello());
     }
 }

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class MyControllerSet {
-    @Autowired
+
     private GreetingService greetingService;
 
     public MyControllerSet() {
@@ -17,6 +17,7 @@ public class MyControllerSet {
         return greetingService.sayGreeting();
     }
 
+    @Autowired
     public void SetService(GreetingService service){
         this.greetingService = service;
     }
